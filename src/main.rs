@@ -1,12 +1,10 @@
-
-// use kyoto::cli::start::setup;
+use kyoto::cli::start;
 
 fn main() {
-    todo!()
-    // let result = setup();
-    //
-    // match result {
-    //     Ok(_) => {}
-    //     Err(e) => eprintln!(" an error occured:\n{}", e),
-    // }
+    let result = start::setup();
+
+    match result {
+        Ok(_) => {}
+        Err(e) => eprintln!(" an error occured:\n{}", e),
+    }
 }
